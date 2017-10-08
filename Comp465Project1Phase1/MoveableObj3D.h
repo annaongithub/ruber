@@ -27,111 +27,44 @@ protected:
 public:
 
 	// Constructor
-	MoveableObj3D(float modelSize, float modelBoundingRadius)
-	{
-		// Scale the model to the desired size
-		scale = glm::vec3(modelSize / modelBoundingRadius);
-		scaleMatrix = glm::scale(glm::mat4(), glm::vec3(scale));
-
-		identity = glm::mat4();		// initialize the identity matrix
-
-									// No initial rotation, orientation, or translation
-		rotationMatrix = identity;
-		orientationMatrix = identity;
-		translationMatrix = identity;
-
-		modelMatrix = identity;
-
-		rotationAxis = glm::vec3(0, 1, 0);
-	}
+	MoveableObj3D(float modelSize, float modelBoundingRadius);
 
 	// Returns the model matrix for the 3D object.
-	glm::mat4 getModelMatrix()
-	{
-		return orientationMatrix * scaleMatrix;
-	}
+	glm::mat4 getModelMatrix();
 
 	// Returns the rotational matrix for the 3D object.
-	glm::mat4 getRotationMatrix()
-	{
-		return rotationMatrix;
-	}
+	glm::mat4 getRotationMatrix();
 
 	// Returns the orientation matrix for the 3D object.
-	glm::mat4 getOrientationMatrix()
-	{
-		return orientationMatrix;
-	}
+	glm::mat4 getOrientationMatrix();
 
-	glm::mat4 getTranslationMatrix()
-	{
-		return translationMatrix;
-	}
+	glm::mat4 getTranslationMatrix();
 
-	float getRotationAmount()
-	{
-		return rotationAmount;
-	}
+	float getRotationAmount();
 
 	// Translates the translation matrix by a passed in amount.
-	void setTranslationMatrix(glm::vec3 passedTranslation)
-	{
-		translationMatrix = glm::translate(translationMatrix, passedTranslation);
-	}
+	void setTranslationMatrix(glm::vec3 passedTranslation);
 
 	// Sets the translation matrix to an outside matrix.
-	void setTranslationMatrix(glm::mat4 passedTranslationMatrix)
-	{
-		translationMatrix = passedTranslationMatrix;
-	}
+	void setTranslationMatrix(glm::mat4 passedTranslationMatrix);
 
 	// Sets the rotation matrix to an outside matrix.
-	void setRotationMatrix(glm::mat4 passedRotationMatrix)
-	{
-		rotationMatrix = passedRotationMatrix;
-	}
+	void setRotationMatrix(glm::mat4 passedRotationMatrix);
 
 	// Sets the rotational rate for the 3D object.
-	void setRotationAmount(float passedRadianAmount)
-	{
-		rotationAmount = passedRadianAmount;
-	}
+	void setRotationAmount(float passedRadianAmount);
 
 	// Sets the orientational matrix.
-	void setOrientationMatrix(glm::mat4 newOrientation)
-	{
-		orientationMatrix = newOrientation;
-	}
+	void setOrientationMatrix(glm::mat4 newOrientation);
 
 	// Sets the object flag to a planet orbit.
-	void setOrbit()
-	{
-		orbit = true;
-	}
+	void setOrbit();
 
 	/* Changes the position of the object
 	to a new position without affecting it's orientation.
 	*/
-	void setPosition(glm::vec3 newPosition)
-	{
-		orientationMatrix[3][0] = newPosition.x;
-		orientationMatrix[3][1] = newPosition.y;
-		orientationMatrix[3][2] = newPosition.z;
-	}
+	void setPosition(glm::vec3 newPosition);
 
 	// Updates the rotation and orientation matrix.
-	void update()
-	{
-		rotationMatrix = glm::rotate(rotationMatrix, rotationAmount, rotationAxis);
-
-		// Set the orientation matrix based on what type of object it is:
-		if (orbit == true)
-		{
-			orientationMatrix = rotationMatrix * translationMatrix;
-		}
-		else
-		{
-			orientationMatrix = translationMatrix * rotationMatrix;
-		}
-	}
+	void update();
 };

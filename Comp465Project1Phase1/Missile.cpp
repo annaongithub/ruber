@@ -1,6 +1,7 @@
+#define __Windows__
 #include "Missile.h"
 #include "MoveableObj3D.h"
-#include "../../includes465/include465.hpp"
+#include "../includes465/include465.hpp"
 
 Missile::Missile(float modelSize, float modelBoundingRadius) : MoveableObj3D(modelSize, modelBoundingRadius){
 	updateFrameCount = 0;
@@ -17,10 +18,6 @@ glm::mat4 Missile::getTargetMatrixLocation() {
 
 glm::vec3 Missile::getDirection() {
 	return direction;
-}
-
-float Missile::getSpeed() {
-	return speed;
 }
 
 int Missile::getUpdateFrameCount() {

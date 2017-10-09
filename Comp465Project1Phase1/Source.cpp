@@ -1,8 +1,9 @@
 #define __Windows__
-#include "../../includes465/include465.hpp"
+#include "../includes465/include465.hpp"
 #include "MoveableObj3D.h"
 #include "Warbird.h"
 #include "Missile.h"
+#include <iostream>
 
 //model indexes
 const int RUBERINDEX = 0;

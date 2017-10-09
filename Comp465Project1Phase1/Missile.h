@@ -1,6 +1,7 @@
 #pragma once
+# define __Windows__
 #include "MoveableObj3D.h"
-#include "../../includes465/include465.hpp"
+#include "../includes465/include465.hpp"
 
 class Missile : public MoveableObj3D {
 private:

@@ -1,6 +1,6 @@
 #define __Windows__
 #include "MoveableObj3D.h"
-#include "../../includes465/include465.hpp"
+#include "../includes465/include465.hpp"
 
 MoveableObj3D::MoveableObj3D(float modelSize, float modelBoundingRadius) {
 	// Scale the model to the desired size

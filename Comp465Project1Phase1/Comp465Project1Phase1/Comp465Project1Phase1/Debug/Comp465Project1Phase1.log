@@ -1,0 +1,160 @@
+﻿  Missile.cpp
+  GLM: GLM_MESSAGES is deprecated, use GLM_FORCE_MESSAGES instead
+  GLM: Windows platform detected
+  GLM: version 0.9.8.5
+  GLM: Visual C++ compiler detected
+  GLM: 32 bits model
+  GLM: Platform independent code
+  GLM: C++0x
+  GLM: Language extensions enabled
+  GLM: Swizzling operators disabled, #define GLM_SWIZZLE to enable swizzle operators
+  GLM: Depth clip space: negative one to one
+  GLM: Coordinate system: right handed
+  GLM: .length() returns glm::length_t, a typedef of int following the GLSL specification
+  GLM: Core library included
+  GLM: GLM_GTC_constants extension included
+  GLM: GLM_GTC_matrix_transform extension included
+  GLM: GLM_GTC_quaternion extension included
+  GLM: GLM_GTC_type_ptr extension included
+  GLM: GLM_GTX_norm extension included
+  GLM: GLM_GTX_quaternion extension included
+  Generating Code...
+  Compiling...
+  Warbird.cpp
+  GLM: GLM_MESSAGES is deprecated, use GLM_FORCE_MESSAGES instead
+  GLM: Windows platform detected
+  GLM: version 0.9.8.5
+  GLM: Visual C++ compiler detected
+  GLM: 32 bits model
+  GLM: Platform independent code
+  GLM: C++0x
+  GLM: Language extensions enabled
+  GLM: Swizzling operators disabled, #define GLM_SWIZZLE to enable swizzle operators
+  GLM: Depth clip space: negative one to one
+  GLM: Coordinate system: right handed
+  GLM: .length() returns glm::length_t, a typedef of int following the GLSL specification
+  GLM: Core library included
+  GLM: GLM_GTC_constants extension included
+  GLM: GLM_GTC_matrix_transform extension included
+  GLM: GLM_GTC_quaternion extension included
+  GLM: GLM_GTC_type_ptr extension included
+  GLM: GLM_GTX_norm extension included
+  GLM: GLM_GTX_quaternion extension included
+  Source.cpp
+  GLM: GLM_MESSAGES is deprecated, use GLM_FORCE_MESSAGES instead
+  GLM: Windows platform detected
+  GLM: version 0.9.8.5
+  GLM: Visual C++ compiler detected
+  GLM: 32 bits model
+  GLM: Platform independent code
+  GLM: C++0x
+  GLM: Language extensions enabled
+  GLM: Swizzling operators disabled, #define GLM_SWIZZLE to enable swizzle operators
+  GLM: Depth clip space: negative one to one
+  GLM: Coordinate system: right handed
+  GLM: .length() returns glm::length_t, a typedef of int following the GLSL specification
+  GLM: Core library included
+  GLM: GLM_GTC_constants extension included
+  GLM: GLM_GTC_matrix_transform extension included
+  GLM: GLM_GTC_quaternion extension included
+  GLM: GLM_GTC_type_ptr extension included
+  GLM: GLM_GTX_norm extension included
+  GLM: GLM_GTX_quaternion extension included
+c:\users\overt\onedrive\documents\visual studio 2017\projects\comp465project1phase1\comp465project1phase1\source.cpp(345): warning C4552: '-': operator has no effect; expected operator with side-effect
+  MoveableObj3D.cpp
+  GLM: GLM_MESSAGES is deprecated, use GLM_FORCE_MESSAGES instead
+  GLM: Windows platform detected
+  GLM: version 0.9.8.5
+  GLM: Visual C++ compiler detected
+  GLM: 32 bits model
+  GLM: Platform independent code
+  GLM: C++0x
+  GLM: Language extensions enabled
+  GLM: Swizzling operators disabled, #define GLM_SWIZZLE to enable swizzle operators
+  GLM: Depth clip space: negative one to one
+  GLM: Coordinate system: right handed
+  GLM: .length() returns glm::length_t, a typedef of int following the GLSL specification
+  GLM: Core library included
+  GLM: GLM_GTC_constants extension included
+  GLM: GLM_GTC_matrix_transform extension included
+  GLM: GLM_GTC_quaternion extension included
+  GLM: GLM_GTC_type_ptr extension included
+  GLM: GLM_GTX_norm extension included
+  GLM: GLM_GTX_quaternion extension included
+  Generating Code...
+MoveableObj3D.obj : error LNK2005: "float __cdecl acosDotProduct(float)" (?acosDotProduct@@YAMM@Z) already defined in Missile.obj
+MoveableObj3D.obj : error LNK2005: "void __cdecl checkCreate(int,char const *)" (?checkCreate@@YAXHPBD@Z) already defined in Missile.obj
+MoveableObj3D.obj : error LNK2005: "void __cdecl checkProgramStatus(int,int,char const *)" (?checkProgramStatus@@YAXHHPBD@Z) already defined in Missile.obj
+MoveableObj3D.obj : error LNK2005: "void __cdecl checkShaderStatus(int,int,char const *)" (?checkShaderStatus@@YAXHHPBD@Z) already defined in Missile.obj
+MoveableObj3D.obj : error LNK2005: "bool __cdecl colinear(struct glm::tvec3<float,0> &,struct glm::tvec3<float,0> &,double)" (?colinear@@YA_NAAU?$tvec3@M$0A@@glm@@0N@Z) already defined in Missile.obj
+MoveableObj3D.obj : error LNK2005: "float __cdecl distance(struct glm::tvec3<float,0>,struct glm::tvec3<float,0>)" (?distance@@YAMU?$tvec3@M$0A@@glm@@0@Z) already defined in Missile.obj
+MoveableObj3D.obj : error LNK2005: "struct glm::tvec3<float,0> __cdecl getDown(struct glm::tmat4x4<float,0> const &)" (?getDown@@YA?AU?$tvec3@M$0A@@glm@@ABU?$tmat4x4@M$0A@@2@@Z) already defined in Missile.obj
+MoveableObj3D.obj : error LNK2005: "struct glm::tvec3<float,0> __cdecl getIn(struct glm::tmat4x4<float,0> const &)" (?getIn@@YA?AU?$tvec3@M$0A@@glm@@ABU?$tmat4x4@M$0A@@2@@Z) already defined in Missile.obj
+MoveableObj3D.obj : error LNK2005: "struct glm::tvec3<float,0> __cdecl getLeft(struct glm::tmat4x4<float,0> const &)" (?getLeft@@YA?AU?$tvec3@M$0A@@glm@@ABU?$tmat4x4@M$0A@@2@@Z) already defined in Missile.obj
+MoveableObj3D.obj : error LNK2005: "struct glm::tvec3<float,0> __cdecl getOut(struct glm::tmat4x4<float,0> const &)" (?getOut@@YA?AU?$tvec3@M$0A@@glm@@ABU?$tmat4x4@M$0A@@2@@Z) already defined in Missile.obj
+MoveableObj3D.obj : error LNK2005: "struct glm::tvec3<float,0> __cdecl getPosition(struct glm::tmat4x4<float,0> const &)" (?getPosition@@YA?AU?$tvec3@M$0A@@glm@@ABU?$tmat4x4@M$0A@@2@@Z) already defined in Missile.obj
+MoveableObj3D.obj : error LNK2005: "struct glm::tvec3<float,0> __cdecl getRight(struct glm::tmat4x4<float,0> const &)" (?getRight@@YA?AU?$tvec3@M$0A@@glm@@ABU?$tmat4x4@M$0A@@2@@Z) already defined in Missile.obj
+MoveableObj3D.obj : error LNK2005: "struct glm::tvec3<float,0> __cdecl getUp(struct glm::tmat4x4<float,0> const &)" (?getUp@@YA?AU?$tvec3@M$0A@@glm@@ABU?$tmat4x4@M$0A@@2@@Z) already defined in Missile.obj
+MoveableObj3D.obj : error LNK2005: "bool __cdecl isNanMat4(struct glm::tmat4x4<float,0> const &)" (?isNanMat4@@YA_NABU?$tmat4x4@M$0A@@glm@@@Z) already defined in Missile.obj
+MoveableObj3D.obj : error LNK2005: "bool __cdecl isNanVec3(struct glm::tvec3<float,0> &)" (?isNanVec3@@YA_NAAU?$tvec3@M$0A@@glm@@@Z) already defined in Missile.obj
+MoveableObj3D.obj : error LNK2005: "bool __cdecl isNanVec4(struct glm::tvec4<float,0> &)" (?isNanVec4@@YA_NAAU?$tvec4@M$0A@@glm@@@Z) already defined in Missile.obj
+MoveableObj3D.obj : error LNK2005: "float __cdecl loadModelBuffer(char * const,unsigned int,unsigned int,unsigned int,unsigned int,unsigned int,unsigned int,unsigned int,char *,char *,char *)" (?loadModelBuffer@@YAMQADIIIIIIIPAD11@Z) already defined in Missile.obj
+MoveableObj3D.obj : error LNK2005: "unsigned int __cdecl loadShaders(char const *,char const *)" (?loadShaders@@YAIPBD0@Z) already defined in Missile.obj
+MoveableObj3D.obj : error LNK2005: "float __cdecl loadTriModel(char *,int,struct glm::tvec4<float,0> * const,struct glm::tvec4<float,0> * const,struct glm::tvec3<float,0> * const)" (?loadTriModel@@YAMPADHQAU?$tvec4@M$0A@@glm@@1QAU?$tvec3@M$0A@@2@@Z) already defined in Missile.obj
+MoveableObj3D.obj : error LNK2005: "char * __cdecl readShaderSource(char const *)" (?readShaderSource@@YAPADPBD@Z) already defined in Missile.obj
+MoveableObj3D.obj : error LNK2005: "void __cdecl showMat4(char *,struct glm::tmat4x4<float,0> const &)" (?showMat4@@YAXPADABU?$tmat4x4@M$0A@@glm@@@Z) already defined in Missile.obj
+MoveableObj3D.obj : error LNK2005: "void __cdecl showQuat(char *,struct glm::tquat<float,0>)" (?showQuat@@YAXPADU?$tquat@M$0A@@glm@@@Z) already defined in Missile.obj
+MoveableObj3D.obj : error LNK2005: "void __cdecl showVec3(char *,struct glm::tvec3<float,0> const &)" (?showVec3@@YAXPADABU?$tvec3@M$0A@@glm@@@Z) already defined in Missile.obj
+MoveableObj3D.obj : error LNK2005: "void __cdecl showVec4(char *,struct glm::tvec4<float,0> const &)" (?showVec4@@YAXPADABU?$tvec4@M$0A@@glm@@@Z) already defined in Missile.obj
+MoveableObj3D.obj : error LNK2005: "struct glm::tvec3<float,0> __cdecl unitNormal(struct glm::tvec4<float,0> &,struct glm::tvec4<float,0> &,struct glm::tvec4<float,0> &)" (?unitNormal@@YA?AU?$tvec3@M$0A@@glm@@AAU?$tvec4@M$0A@@2@00@Z) already defined in Missile.obj
+Source.obj : error LNK2005: "float __cdecl acosDotProduct(float)" (?acosDotProduct@@YAMM@Z) already defined in Missile.obj
+Source.obj : error LNK2005: "void __cdecl checkCreate(int,char const *)" (?checkCreate@@YAXHPBD@Z) already defined in Missile.obj
+Source.obj : error LNK2005: "void __cdecl checkProgramStatus(int,int,char const *)" (?checkProgramStatus@@YAXHHPBD@Z) already defined in Missile.obj
+Source.obj : error LNK2005: "void __cdecl checkShaderStatus(int,int,char const *)" (?checkShaderStatus@@YAXHHPBD@Z) already defined in Missile.obj
+Source.obj : error LNK2005: "bool __cdecl colinear(struct glm::tvec3<float,0> &,struct glm::tvec3<float,0> &,double)" (?colinear@@YA_NAAU?$tvec3@M$0A@@glm@@0N@Z) already defined in Missile.obj
+Source.obj : error LNK2005: "float __cdecl distance(struct glm::tvec3<float,0>,struct glm::tvec3<float,0>)" (?distance@@YAMU?$tvec3@M$0A@@glm@@0@Z) already defined in Missile.obj
+Source.obj : error LNK2005: "struct glm::tvec3<float,0> __cdecl getDown(struct glm::tmat4x4<float,0> const &)" (?getDown@@YA?AU?$tvec3@M$0A@@glm@@ABU?$tmat4x4@M$0A@@2@@Z) already defined in Missile.obj
+Source.obj : error LNK2005: "struct glm::tvec3<float,0> __cdecl getIn(struct glm::tmat4x4<float,0> const &)" (?getIn@@YA?AU?$tvec3@M$0A@@glm@@ABU?$tmat4x4@M$0A@@2@@Z) already defined in Missile.obj
+Source.obj : error LNK2005: "struct glm::tvec3<float,0> __cdecl getLeft(struct glm::tmat4x4<float,0> const &)" (?getLeft@@YA?AU?$tvec3@M$0A@@glm@@ABU?$tmat4x4@M$0A@@2@@Z) already defined in Missile.obj
+Source.obj : error LNK2005: "struct glm::tvec3<float,0> __cdecl getOut(struct glm::tmat4x4<float,0> const &)" (?getOut@@YA?AU?$tvec3@M$0A@@glm@@ABU?$tmat4x4@M$0A@@2@@Z) already defined in Missile.obj
+Source.obj : error LNK2005: "struct glm::tvec3<float,0> __cdecl getPosition(struct glm::tmat4x4<float,0> const &)" (?getPosition@@YA?AU?$tvec3@M$0A@@glm@@ABU?$tmat4x4@M$0A@@2@@Z) already defined in Missile.obj
+Source.obj : error LNK2005: "struct glm::tvec3<float,0> __cdecl getRight(struct glm::tmat4x4<float,0> const &)" (?getRight@@YA?AU?$tvec3@M$0A@@glm@@ABU?$tmat4x4@M$0A@@2@@Z) already defined in Missile.obj
+Source.obj : error LNK2005: "struct glm::tvec3<float,0> __cdecl getUp(struct glm::tmat4x4<float,0> const &)" (?getUp@@YA?AU?$tvec3@M$0A@@glm@@ABU?$tmat4x4@M$0A@@2@@Z) already defined in Missile.obj
+Source.obj : error LNK2005: "bool __cdecl isNanMat4(struct glm::tmat4x4<float,0> const &)" (?isNanMat4@@YA_NABU?$tmat4x4@M$0A@@glm@@@Z) already defined in Missile.obj
+Source.obj : error LNK2005: "bool __cdecl isNanVec3(struct glm::tvec3<float,0> &)" (?isNanVec3@@YA_NAAU?$tvec3@M$0A@@glm@@@Z) already defined in Missile.obj
+Source.obj : error LNK2005: "bool __cdecl isNanVec4(struct glm::tvec4<float,0> &)" (?isNanVec4@@YA_NAAU?$tvec4@M$0A@@glm@@@Z) already defined in Missile.obj
+Source.obj : error LNK2005: "float __cdecl loadModelBuffer(char * const,unsigned int,unsigned int,unsigned int,unsigned int,unsigned int,unsigned int,unsigned int,char *,char *,char *)" (?loadModelBuffer@@YAMQADIIIIIIIPAD11@Z) already defined in Missile.obj
+Source.obj : error LNK2005: "unsigned int __cdecl loadShaders(char const *,char const *)" (?loadShaders@@YAIPBD0@Z) already defined in Missile.obj
+Source.obj : error LNK2005: "float __cdecl loadTriModel(char *,int,struct glm::tvec4<float,0> * const,struct glm::tvec4<float,0> * const,struct glm::tvec3<float,0> * const)" (?loadTriModel@@YAMPADHQAU?$tvec4@M$0A@@glm@@1QAU?$tvec3@M$0A@@2@@Z) already defined in Missile.obj
+Source.obj : error LNK2005: "char * __cdecl readShaderSource(char const *)" (?readShaderSource@@YAPADPBD@Z) already defined in Missile.obj
+Source.obj : error LNK2005: "void __cdecl showMat4(char *,struct glm::tmat4x4<float,0> const &)" (?showMat4@@YAXPADABU?$tmat4x4@M$0A@@glm@@@Z) already defined in Missile.obj
+Source.obj : error LNK2005: "void __cdecl showQuat(char *,struct glm::tquat<float,0>)" (?showQuat@@YAXPADU?$tquat@M$0A@@glm@@@Z) already defined in Missile.obj
+Source.obj : error LNK2005: "void __cdecl showVec3(char *,struct glm::tvec3<float,0> const &)" (?showVec3@@YAXPADABU?$tvec3@M$0A@@glm@@@Z) already defined in Missile.obj
+Source.obj : error LNK2005: "void __cdecl showVec4(char *,struct glm::tvec4<float,0> const &)" (?showVec4@@YAXPADABU?$tvec4@M$0A@@glm@@@Z) already defined in Missile.obj
+Source.obj : error LNK2005: "struct glm::tvec3<float,0> __cdecl unitNormal(struct glm::tvec4<float,0> &,struct glm::tvec4<float,0> &,struct glm::tvec4<float,0> &)" (?unitNormal@@YA?AU?$tvec3@M$0A@@glm@@AAU?$tvec4@M$0A@@2@00@Z) already defined in Missile.obj
+Warbird.obj : error LNK2005: "float __cdecl acosDotProduct(float)" (?acosDotProduct@@YAMM@Z) already defined in Missile.obj
+Warbird.obj : error LNK2005: "void __cdecl checkCreate(int,char const *)" (?checkCreate@@YAXHPBD@Z) already defined in Missile.obj
+Warbird.obj : error LNK2005: "void __cdecl checkProgramStatus(int,int,char const *)" (?checkProgramStatus@@YAXHHPBD@Z) already defined in Missile.obj
+Warbird.obj : error LNK2005: "void __cdecl checkShaderStatus(int,int,char const *)" (?checkShaderStatus@@YAXHHPBD@Z) already defined in Missile.obj
+Warbird.obj : error LNK2005: "bool __cdecl colinear(struct glm::tvec3<float,0> &,struct glm::tvec3<float,0> &,double)" (?colinear@@YA_NAAU?$tvec3@M$0A@@glm@@0N@Z) already defined in Missile.obj
+Warbird.obj : error LNK2005: "float __cdecl distance(struct glm::tvec3<float,0>,struct glm::tvec3<float,0>)" (?distance@@YAMU?$tvec3@M$0A@@glm@@0@Z) already defined in Missile.obj
+Warbird.obj : error LNK2005: "struct glm::tvec3<float,0> __cdecl getDown(struct glm::tmat4x4<float,0> const &)" (?getDown@@YA?AU?$tvec3@M$0A@@glm@@ABU?$tmat4x4@M$0A@@2@@Z) already defined in Missile.obj
+Warbird.obj : error LNK2005: "struct glm::tvec3<float,0> __cdecl getIn(struct glm::tmat4x4<float,0> const &)" (?getIn@@YA?AU?$tvec3@M$0A@@glm@@ABU?$tmat4x4@M$0A@@2@@Z) already defined in Missile.obj
+Warbird.obj : error LNK2005: "struct glm::tvec3<float,0> __cdecl getLeft(struct glm::tmat4x4<float,0> const &)" (?getLeft@@YA?AU?$tvec3@M$0A@@glm@@ABU?$tmat4x4@M$0A@@2@@Z) already defined in Missile.obj
+Warbird.obj : error LNK2005: "struct glm::tvec3<float,0> __cdecl getOut(struct glm::tmat4x4<float,0> const &)" (?getOut@@YA?AU?$tvec3@M$0A@@glm@@ABU?$tmat4x4@M$0A@@2@@Z) already defined in Missile.obj
+Warbird.obj : error LNK2005: "struct glm::tvec3<float,0> __cdecl getPosition(struct glm::tmat4x4<float,0> const &)" (?getPosition@@YA?AU?$tvec3@M$0A@@glm@@ABU?$tmat4x4@M$0A@@2@@Z) already defined in Missile.obj
+Warbird.obj : error LNK2005: "struct glm::tvec3<float,0> __cdecl getRight(struct glm::tmat4x4<float,0> const &)" (?getRight@@YA?AU?$tvec3@M$0A@@glm@@ABU?$tmat4x4@M$0A@@2@@Z) already defined in Missile.obj
+Warbird.obj : error LNK2005: "struct glm::tvec3<float,0> __cdecl getUp(struct glm::tmat4x4<float,0> const &)" (?getUp@@YA?AU?$tvec3@M$0A@@glm@@ABU?$tmat4x4@M$0A@@2@@Z) already defined in Missile.obj
+Warbird.obj : error LNK2005: "bool __cdecl isNanMat4(struct glm::tmat4x4<float,0> const &)" (?isNanMat4@@YA_NABU?$tmat4x4@M$0A@@glm@@@Z) already defined in Missile.obj
+Warbird.obj : error LNK2005: "bool __cdecl isNanVec3(struct glm::tvec3<float,0> &)" (?isNanVec3@@YA_NAAU?$tvec3@M$0A@@glm@@@Z) already defined in Missile.obj
+Warbird.obj : error LNK2005: "bool __cdecl isNanVec4(struct glm::tvec4<float,0> &)" (?isNanVec4@@YA_NAAU?$tvec4@M$0A@@glm@@@Z) already defined in Missile.obj
+Warbird.obj : error LNK2005: "float __cdecl loadModelBuffer(char * const,unsigned int,unsigned int,unsigned int,unsigned int,unsigned int,unsigned int,unsigned int,char *,char *,char *)" (?loadModelBuffer@@YAMQADIIIIIIIPAD11@Z) already defined in Missile.obj
+Warbird.obj : error LNK2005: "unsigned int __cdecl loadShaders(char const *,char const *)" (?loadShaders@@YAIPBD0@Z) already defined in Missile.obj
+Warbird.obj : error LNK2005: "float __cdecl loadTriModel(char *,int,struct glm::tvec4<float,0> * const,struct glm::tvec4<float,0> * const,struct glm::tvec3<float,0> * const)" (?loadTriModel@@YAMPADHQAU?$tvec4@M$0A@@glm@@1QAU?$tvec3@M$0A@@2@@Z) already defined in Missile.obj
+Warbird.obj : error LNK2005: "char * __cdecl readShaderSource(char const *)" (?readShaderSource@@YAPADPBD@Z) already defined in Missile.obj
+Warbird.obj : error LNK2005: "void __cdecl showMat4(char *,struct glm::tmat4x4<float,0> const &)" (?showMat4@@YAXPADABU?$tmat4x4@M$0A@@glm@@@Z) already defined in Missile.obj
+Warbird.obj : error LNK2005: "void __cdecl showQuat(char *,struct glm::tquat<float,0>)" (?showQuat@@YAXPADU?$tquat@M$0A@@glm@@@Z) already defined in Missile.obj
+Warbird.obj : error LNK2005: "void __cdecl showVec3(char *,struct glm::tvec3<float,0> const &)" (?showVec3@@YAXPADABU?$tvec3@M$0A@@glm@@@Z) already defined in Missile.obj
+Warbird.obj : error LNK2005: "void __cdecl showVec4(char *,struct glm::tvec4<float,0> const &)" (?showVec4@@YAXPADABU?$tvec4@M$0A@@glm@@@Z) already defined in Missile.obj
+Warbird.obj : error LNK2005: "struct glm::tvec3<float,0> __cdecl unitNormal(struct glm::tvec4<float,0> &,struct glm::tvec4<float,0> &,struct glm::tvec4<float,0> &)" (?unitNormal@@YA?AU?$tvec3@M$0A@@glm@@AAU?$tvec4@M$0A@@2@00@Z) already defined in Missile.obj
+C:\Users\overt\OneDrive\Documents\Visual Studio 2017\Projects\Comp465Project1Phase1\Debug\Comp465Project1Phase1.exe : fatal error LNK1169: one or more multiply defined symbols found

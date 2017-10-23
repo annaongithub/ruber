@@ -1,7 +1,4 @@
-#define __Windows__
 #include "Missile.h"
-#include "MoveableObj3D.h"
-#include "../includes465/include465.hpp"
 
 Missile::Missile(float modelSize, float modelBoundingRadius) : MoveableObj3D(modelSize, modelBoundingRadius){
 	updateFrameCount = 0;

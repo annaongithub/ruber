@@ -1,7 +1,7 @@
-#define __Windows__
-#include "MoveableObj3D.h"
+#pragma once
+
 #include "Warbird.h"
-#include "../includes465/include465.hpp"
+
 
 Warbird::Warbird(float modelSize, float modelBoundingRadius) : MoveableObj3D(modelSize, modelBoundingRadius) {
 	updateFrameCount = 0;

@@ -1,7 +1,8 @@
-#pragma once
-# define __Windows__
+
+
+#ifndef MISSILE_H
+#define MISSILE_H
 #include "MoveableObj3D.h"
-#include "../includes465/include465.hpp"
 
 class Missile : public MoveableObj3D {
 private:
@@ -21,6 +22,7 @@ public:
 	void setDirection(glm::vec3 passedInDirection);
 	glm::mat4 getTargetMatrixLocation();
 	glm::vec3 getDirection();
-	float getSpeed();
 	int getUpdateFrameCount();
 };
+
+#endif

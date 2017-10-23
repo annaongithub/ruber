@@ -1,13 +1,16 @@
 /*
-File: Object3D.hpp
+File: MoveableObj3D.hpp
 Description: Represent the scale, translation, and rotation of a 3D object.
 */
+#ifndef __INCLUDES465__
+#define __Windows__
+#include "../../includes465/include465.hpp"
+#endif
 
-#include "../includes465/include465.hpp"
-# define __Windows__
+#ifndef MOVEABLEOBJ3D_H
+#define MOVEABLEOBJ3D_H
 
-class MoveableObj3D
-{
+class MoveableObj3D{
 
 protected:
 
@@ -68,3 +71,5 @@ public:
 	// Updates the rotation and orientation matrix.
 	void update();
 };
+
+#endif

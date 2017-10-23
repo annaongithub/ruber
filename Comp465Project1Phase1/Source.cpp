@@ -1,9 +1,9 @@
-#define __Windows__
-#include "../includes465/include465.hpp"
-#include "MoveableObj3D.h"
-#include "Warbird.h"
+
+
+
 #include "Missile.h"
-#include <iostream>
+#include "Warbird.h"
+
 
 //model indexes
 const int RUBERINDEX = 0;
@@ -38,14 +38,14 @@ char* modelFile[totalModels] = {
 };
 
 int vertexCount[totalModels]{
-	264 * 3,	//ruber
-	312 * 3,	//unum
-	264 * 3,	//duo
-	264 * 3,	//primus
-	264 * 3,	//secundus
-	2568 * 3,	//warbird
-	282 * 3,	//ship missile
-	282 * 3		//ship missile
+	134 * 3,	//ruber
+	134 * 3,	//unum
+	134 * 3,	//duo
+	554 * 3,	//primus
+	134 * 3,	//secundus
+	413 * 3,	//warbird
+	580 * 3,	//ship missile
+	580 * 3		//ship missile
 };
 
 float modelBR[totalModels];
@@ -102,7 +102,7 @@ GLuint vNormal[totalModels];
 glm::mat4 modelMatrix[totalModels];		//set in display()
 glm::mat4 viewMatrix;
 glm::mat4 projectionMatrix;				//set in reshape()
-glm::mat4 modelViewProjectionMatrix;	//set in display()
+glm::mat4 ModelViewProjectionMatrix;	//set in display()
 
 //Camera
 
@@ -144,7 +144,7 @@ glm::vec3 shipLookingAt(0.0f, 0.0f, -1.0f);
 
 //Missle Variables
 MoveableObj3D* shipMissile;
-Missile* shipMissile;
+Missile* ShipMissile;
 
 //Missile Variables
 glm::mat4 missileLocation;
@@ -309,10 +309,12 @@ void init() {
 	}
 
 	//Create the warbird
-	warbird = new Warbird(modelSize[SHIPINDEX], modelBR[SHIPINDEX], translatePosition[SHIPINDEX]);
+	warbird = new Warbird (modelBR[SHIPINDEX], translatePosition[SHIPINDEX]);
 	warbird->setTranslationMatrix(translatePosition[SHIPINDEX]);
 	warbird->setRotationAmount(rotationAmount[SHIPINDEX]);
 	warbird->setPosition(translatePosition[SHIPINDEX]);
+
+	obj3D[SHIPINDEX] = warbird;
 
 	//Create the ship missile
 	shipMissile = new Missile(modelSize[SHIPMISSILE], modelBR[SHIPMISSILE]);
@@ -400,8 +402,8 @@ void display() {
 		}
 
 		viewMatrix = mainCamera;
-		modelViewProjectionMatrix = projectionMatrix * viewMatrix * obj3D[i]->getModelMatrix;
-		glUniformMatrix3fv(MVP, 1, GL_FALSE, glm::value_ptr(modelViewProjectionMatrix));
+		ModelViewProjectionMatrix = projectionMatrix * viewMatrix * obj3D[i]->getModelMatrix();
+		glUniformMatrix3fv(MVP, 1, GL_FALSE, glm::value_ptr(ModelViewProjectionMatrix));
 		modelViewMatrix = viewMatrix * obj3D[i]->getModelMatrix();
 		normalMatrix = glm::mat3(modelViewMatrix);
 		glUniformMatrix3fv(NormalMatrix, 1, GL_FALSE, glm::value_ptr(normalMatrix));
@@ -425,8 +427,8 @@ void display() {
 		glUniformMatrix4fv(ModelViewMatrix, 1, GL_FALSE, glm::value_ptr(modelViewMatrix));
 		normalMatrix = glm::mat3(modelViewMatrix);
 		glUniformMatrix3fv(NormalMatrix, 1, GL_FALSE, glm::value_ptr(normalMatrix));
-		modelViewProjectionMatrix = projectionMatrix * modelViewMatrix;
-		glUniformMatrix4fv(MVP, 1, GL_FALSE, glm::value_ptr(modelViewProjectionMatrix));
+		ModelViewProjectionMatrix = projectionMatrix * modelViewMatrix;
+		glUniformMatrix4fv(MVP, 1, GL_FALSE, glm::value_ptr(ModelViewProjectionMatrix));
 		glBindVertexArray(textVAO);
 
 		glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, textIBO);
